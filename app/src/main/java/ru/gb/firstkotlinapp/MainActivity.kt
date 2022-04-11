@@ -20,5 +20,12 @@ class MainActivity : AppCompatActivity() {
             textView.text = "Hello Kotlin!"
         }
 
+        val note1 = Note("Первая заметка", "Текст первой заметки")
+        val note2 = note1.copy()
+        note2.title = "Не первая заметка"
+        note2.note = "Текст следующей заметки"
+
+        val textView1: TextView = findViewById(R.id.textView1)
+        textView1.text = note2.title + " " + note2.note
     }
 }

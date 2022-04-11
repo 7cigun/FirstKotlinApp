@@ -1,3 +1,3 @@
 package ru.gb.firstkotlinapp
 
-data class Note(val title: String = "Заметка по умолчанию", val note: String = "просто заметка")
+data class Note(var title: String = "Заметка по умолчанию", var note: String = "просто заметка")
