@@ -27,5 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         val textView1: TextView = findViewById(R.id.textView1)
         textView1.text = note2.title + " " + note2.note
+
+        Database.getNotesCycle()
     }
 }
